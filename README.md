@@ -26,3 +26,16 @@
 | `mv` | move | Move ficheiros ou diretorios. Se o sujeito for movido para o mesmo local e o nome for alterado funciona como um rename |
 | `rm` | Remove | Apaga ficheiros ou diretorios |
 | `rm -r` | Remove recursivamente | Usado para apagar diretorios que por sua vez estejam vazios ou com ficheiros |
+
+## git
+
+Todos os comandos comecam com `git`  
+
+| Comando | Descricao |
+| ----------- | ----------- |
+| `checkout` | Mudar de branch |
+| `checkout -b` |Criar uma branch e coloca-te nela |
+| `add` | Dar stage das alteracoes que queremos fazer commit |
+| `commit -m` | Aplicar as alteracoes que foram staged, criando uma nova versao dos ficheiros alterados mantendo um historico das alteracoes antigas. `-m` Aplica uma mensagem ao commit |
+| `push` | Manda as alteracoes do commit para o repositorio remoto. Para o repositorio remoto receber alteracoes o meu branch tem que existir la |
+| `status` | Mostra alteracoes de ficheiros: criacao, modificacao, remocao. Que ficheiros foram alterados. Os ficheiros que estao staged para serem committed |
