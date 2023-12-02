@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Marco
+		</title>
+		<style>
+			div:not(.row, [class^="col"], .container) {
+				outline: 1px #fff solid;
+				padding: 10px;
+				margin: 20px 0px;
+			}
+		</style>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/styles/layout.css">
+		<link rel="stylesheet" href="./assets/styles/styles.css">
+	</head>
+	<body class="background">
+		<form>
+			<!--Isto e um comentario em html
+				<p>
+					Isto e um paragrafo comentado
+				</p>
+			-->
+			<h1>Apontamentos do SABADAO</h1>
+			<h2>Com muitos</h2>
+			<h3>Peixinhos</h3>
+			<h4>Mesmo muito</h4>
+			<h5>piquininos</h5>
+			<div class="row">
+				<div class="col-12 col-xl-4">
+					<h2>Texto</h2>
+					<span>
+						Nao e o corpo
+					</span><br>
+					<b>
+						Este texto era para estar em bold
+					</b><br>
+					<i>
+						Este texto era para estar em italico
+					</i><br>
+					<u>
+						Talvez esteja sublinhado
+					</u>
+					<p>
+						Isto e um paragrafo
+					</p>
+				</div>
+				<div class="col-12 col-xl-4">
+					<h2>Tabela</h2>
+					<table>
+						<tr>
+							<th>
+								Janeiro
+							</th>
+							<th>
+								Fevereiro
+							</th>
+							<th>
+								Marco
+							</th>
+						</tr>
+						<tr>
+							<td>
+								15kg
+							</td>
+							<td>
+								18kg
+							</td>
+							<td>
+								19kg
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-12 col-xl-4">
+					<h2>Listas</h2>
+					<ol>
+						<li>
+							Ovos
+						</li>
+						<li>
+							Frango
+						</li>
+						<li>
+							Iogurte
+						</li>
+						<li>
+							Peras
+						</li>
+						<li>
+							Arroz
+						</li>
+					</ol>
+					<ul>
+						<li>
+							<b>
+								Ovos
+							</b>
+						</li>
+						<li>
+							Frango
+						</li>
+						<li>
+							Iogurte
+						</li>
+						<li><u>
+								Peras
+						</u></li>
+						<li><u>
+								Arroz
+						</u></li>	
+					</ul>		
+				</div>
+			</div>
+			<h2>Divs</h2>
+			<div class="divider"></div>
+			<div class="row">
+				<div class="col-6">
+					<h3>a e hiperligacoes/css por id e por estilo</h3>
+					<div>
+						<p id="Joao">
+							O joao foi ao pao e nao encontrou arroz. Quem diria. <br>
+							Talvez podia ter ido ao 
+							<a
+									target="_blank"
+									href="https://www.continente.pt/brinquedos-e-jogos/faz-de-conta/?start=0&srule=NONFOOD-Brinquedos&pmin=0.01" 
+									style="color: red;">
+								continente
+							</a>.
+						</p>
+					</div>
+				</div>
+				<div class="col-6">
+					<h3>Button e hiperligacoes</h3>
+					<div>
+						<p>
+							Ou talvez podia ter ido ao MiniPreco
+						</p>
+						<button onclick="window.open('https://www.minipreco.pt','_blank')" type="button">
+							Va ao MiniPreco
+						</button>
+					</div>
+				</div>
+			</div>
+			<h3>Inputs</h3>
+			<div class="row">
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Submeter itens de compras (Um input texto)
+						</p>
+						<input type="text">
+					</div>
+				</div>
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Numero de telemovel Vodafone (Um input numerico)
+						</p>
+						<input type="number" min="910000000" max="919999999" minlength="9" maxlength="9">
+					</div>
+				</div>
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Diz ai em que dia nasceste oh mano (Um input de data)
+						</p>
+						<input type="date">
+					</div>
+				</div>
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							E agora diz em que dia e hora foi o 911 (Um input de data e hora)
+						</p>
+						<input type="datetime-local">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Qual a tua cor de pele em RGB (Um input cor)
+						</p>
+						<input type="color" value="#ffffff">
+					</div>
+				</div>
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Da ai check da box se tiveres algum outro genero alem de ♂ ou ♀ (Um input checkbox)
+						</p>
+						<input type="checkbox">
+					</div>
+				</div>
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Da ai check da box se tiveres algum outro genero alem de ♂ ou ♀ (Um input radio)
+						</p>
+						<input name="SEXO" type="radio" id="CADEIRA-DE-SERVICOS">
+						<label name="RADIO-LABEL" for="CADEIRA-DE-SERVICOS">
+							Cadeira de Servico
+						</label>
+						<input name="SEXO" type="radio" id="ATTACK-HELICOPTER">
+						<label name="RADIO-LABEL" for="ATTACK-HELICOPTER">
+							Attack Helicopter
+						</label>
+					</div>
+				</div>
+				<div class="col-6 col-xl-3">
+					<div>
+						<p>
+							Manda me os teus tomates
+						</p>
+						<input type="file">
+					</div>
+				</div>
+			</div>
+			<h3>Select</h3>
+			<div>
+				<p>
+					Isto e uma combo box
+				</p>
+				<select required>
+					<option value="">&nbsp;</option>
+					<option value="1">Kawasaki</option>
+					<option value="2">Honda</option>
+				</select>
+			</div>
+		</form>
+	</body>
+</html>
