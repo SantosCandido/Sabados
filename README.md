@@ -39,3 +39,6 @@ Todos os comandos comecam com `git`
 | `commit -m` | Aplicar as alteracoes que foram staged, criando uma nova versao dos ficheiros alterados mantendo um historico das alteracoes antigas. `-m` Aplica uma mensagem ao commit |
 | `push` | Manda as alteracoes do commit para o repositorio remoto. Para o repositorio remoto receber alteracoes o meu branch tem que existir la |
 | `status` | Mostra alteracoes de ficheiros: criacao, modificacao, remocao. Que ficheiros foram alterados. Os ficheiros que estao staged para serem committed |
+| `fetch` | Puxa as alteracoes do repositorio remoto para o repositorio local |
+| `merge <source branch>` | Aplica as alteracoes existentes no source branch |
+| `pull` | Puxa alteracoes do repositorio remoto para o repositorio local aplicando logo as alteracoes. isto e a juncao do `git fetch` e o `git merge` |
